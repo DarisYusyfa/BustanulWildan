@@ -5,7 +5,7 @@
       <div class="container mx-auto text-center">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Service 1 with AOS -->
-          <div data-aos="fade-up" data-aos-duration="500">
+          <div data-aos="fade-left" data-aos-duration="500">
             <div class="bg-white shadow-md rounded-lg p-6 hover:bg-blue-600 hover:text-white hover:scale-105 transform transition duration-300 dark:bg-gray-800">
               <div class="flex justify-center mb-4">
                 <BookOpenIcon class="h-12 w-12 text-blue-600" />
@@ -16,18 +16,18 @@
           </div>
 
           <!-- Service 2 with AOS -->
-          <div data-aos="fade-up" data-aos-duration="700">
+          <div data-aos="fade-left" data-aos-duration="700">
             <div class="bg-white shadow-md rounded-lg p-6 hover:bg-blue-600 hover:text-white hover:scale-105 transform transition duration-300 dark:bg-gray-800">
               <div class="flex justify-center mb-4">
                 <AcademicCapIcon class="h-12 w-12 text-blue-600" />
               </div>
               <h4 class="text-xl font-semibold mb-4">Mubaligh/Ceramah</h4>
-              <p>Program ini melatih mental santri untuk menyampaikan ilmu kepada masyarakat </p>
+              <p>Program ini melatih mental santri untuk menyampaikan ilmu kepada masyarakat</p>
             </div>
           </div>
 
           <!-- Service 3 with AOS -->
-          <div data-aos="fade-up" data-aos-duration="900"> 
+          <div data-aos="fade-left" data-aos-duration="900">
             <div class="bg-white shadow-md rounded-lg p-6 hover:bg-blue-600 hover:text-white hover:scale-105 transform transition duration-300 dark:bg-gray-800">
               <div class="flex justify-center mb-4">
                 <GlobeAltIcon class="h-12 w-12 text-blue-600" />

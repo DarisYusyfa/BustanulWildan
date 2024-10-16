@@ -1,42 +1,165 @@
 <template>
-  <footer class="bg-white dark:bg-gray-800 py-6 mt-12">
-    <div class="container mx-auto px-4 text-center">
-      <p class="text-gray-700 dark:text-gray-300">© 2024 UOneJoki. All rights reserved.</p>
-      <div class="flex justify-center space-x-6 mt-4">
-        <!-- Tambahkan link media sosial -->
-        <a href="https://github.com/DarisYusyfa" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-primary">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M12 .297c-6.627 0-12 5.373-12 12 0 5.304 3.438 9.801 8.205 11.388.6.111.82-.261.82-.577 0-.286-.011-1.241-.017-2.241-3.338.724-4.042-1.606-4.042-1.606-.546-1.383-1.333-1.751-1.333-1.751-1.091-.746.084-.731.084-.731 1.205.085 1.838 1.237 1.838 1.237 1.067 1.827 2.803 1.298 3.487.993.108-.773.418-1.298.762-1.598-2.665-.303-5.466-1.332-5.466-5.931 0-1.313.467-2.386 1.236-3.227-.124-.303-.535-1.528.117-3.176 0 0 1.008-.322 3.303 1.227.957-.266 1.988-.398 3.006-.402 1.018.004 2.049.136 3.006.402 2.295-1.549 3.303-1.227 3.303-1.227.653 1.648.242 2.873.118 3.176.77.841 1.236 1.914 1.236 3.227 0 4.607-2.807 5.624-5.472 5.924.43.371.816 1.102.816 2.222 0 1.606-.014 2.896-.017 3.287 0 .319.219.694.825.577A12.005 12.005 0 0024 12.297c0-6.627-5.373-12-12-12z"
+  <footer class="bg-gradient-to-r from-green-600 to-green-800 text-white">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div class="grid grid-cols-2 gap-8 xl:col-span-2">
+          <div class="md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">Tentang Kami</h3>
+              <ul role="list" class="mt-4 space-y-4">
+                <li>
+                  <a href="#" class="text-base text-gray-300 hover:text-white"> Profil Pesantren </a>
+                </li>
+                <li>
+                  <a href="#" class="text-base text-gray-300 hover:text-white"> Visi & Misi </a>
+                </li>
+                <li>
+                  <a href="#" class="text-base text-gray-300 hover:text-white"> Fasilitas </a>
+                </li>
+                <li>
+                  <a href="#" class="text-base text-gray-300 hover:text-white"> Prestasi </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-12 md:mt-0">
+              <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">Program</h3>
+              <ul role="list" class="mt-4 space-y-4">
+                <li>
+                  <a href="#" class="text-base text-gray-300 hover:text-white"> Tahfidz Qur'an </a>
+                </li>
+                <li>
+                  <a href="#" class="text-base text-gray-300 hover:text-white"> Bahasa Arab & Inggris </a>
+                </li>
+                <li>
+                  <a href="#" class="text-base text-gray-300 hover:text-white"> Sains & Teknologi </a>
+                </li>
+                <li>
+                  <a href="#" class="text-base text-gray-300 hover:text-white"> Kewirausahaan </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">Informasi</h3>
+              <ul role="list" class="mt-4 space-y-4">
+                <li>
+                  <a href="#" class="text-base text-gray-300 hover:text-white"> Pendaftaran </a>
+                </li>
+                <li>
+                  <a href="#" class="text-base text-gray-300 hover:text-white"> Beasiswa </a>
+                </li>
+                <li>
+                  <a href="#" class="text-base text-gray-300 hover:text-white"> Kalender Akademik </a>
+                </li>
+                <li>
+                  <a href="#" class="text-base text-gray-300 hover:text-white"> FAQ </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-12 md:mt-0">
+              <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">Hubungi Kami</h3>
+              <ul role="list" class="mt-4 space-y-4">
+                <li class="flex">
+                  <svg class="h-6 w-6 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                    <path
+                      d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"
+                    />
+                  </svg>
+                  <span>Jl. Tanjakansari No.24 Cileunyi Wetan, Bandung, Jawa Barat, Indonesia</span>
+                </li>
+                <li class="flex">
+                  <svg class="h-6 w-6 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>+62 123 4567 890</span>
+                </li>
+                <li class="flex">
+                  <svg class="h-6 w-6 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                    <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                  </svg>
+                  <span>ponpesbustanulwildan@gmail.com</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 xl:mt-0">
+          <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">Berlangganan Newsletter</h3>
+          <p class="mt-4 text-base text-gray-300">Dapatkan informasi terbaru tentang pesantren dan kegiatan kami.</p>
+          <form class="mt-4 sm:flex sm:max-w-md">
+            <label for="email-address" class="sr-only">Alamat Email</label>
+            <input
+              type="email"
+              name="email-address"
+              id="email-address"
+              autocomplete="email"
+              required
+              class="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400"
+              placeholder="Masukkan email Anda"
             />
-          </svg>
-        </a>
-        <a href="https://instagram.com" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-primary">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M7.001 2C4.242 2 2 4.242 2 7.001v10.001C2 19.758 4.242 22 7.001 22h10.001C19.758 22 22 19.758 22 16.002V7.001C22 4.242 19.758 2 16.002 2H7.001zm11.998 2c1.104 0 2 .896 2 2v10.001c0 1.104-.896 2-2 2H7.001c-1.104 0-2-.896-2-2V7.001c0-1.104.896-2 2-2h10.001zM12 5.839a6.163 6.163 0 100 12.326 6.163 6.163 0 000-12.326zm0 10.001a3.839 3.839 0 110-7.678 3.839 3.839 0 010 7.678zm5.375-10.469a1.5 1.5 0 11-2.828-1 1.5 1.5 0 012.828 1z"
-            />
-          </svg>
-        </a>
-        <a href="https://facebook.com" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-primary">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M22.675 0h-21.35c-.73 0-1.325.596-1.325 1.326v21.348c0 .73.596 1.326 1.325 1.326h11.482v-9.294h-3.118v-3.622h3.118v-2.672c0-3.066 1.873-4.732 4.6-4.732 1.312 0 2.437.097 2.764.141v3.206h-1.897c-1.49 0-1.779.709-1.779 1.747v2.309h3.558l-.465 3.622h-3.093v9.294h6.065c.73 0 1.325-.596 1.325-1.326v-21.348c0-.73-.595-1.326-1.325-1.326z"
-            />
-          </svg>
-        </a>
+            <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+              <button
+                type="submit"
+                class="w-full bg-green-500 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-green-500"
+              >
+                Berlangganan
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+        <div class="flex space-x-6 md:order-2">
+          <a href="#" class="text-gray-400 hover:text-gray-300">
+            <span class="sr-only">Facebook</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-300">
+            <span class="sr-only">Instagram</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110  2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-300">
+            <span class="sr-only">Twitter</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+              />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-300">
+            <span class="sr-only">YouTube</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill-rule="evenodd"
+                d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">&copy; 2024 Ponpes Bustanul Wildan. Hak Cipta Dilindungi.</p>
       </div>
     </div>
   </footer>
 </template>
 
-<script setup>
-// Tidak ada script tambahan, hanya komponen statis
-</script>
-
-<style scoped>
-/* Tambahkan padding dan warna background untuk footer */
-footer {
-  border-top: 1px solid #e5e7eb; /* Light gray border */
-}
-</style>
+<script setup></script>

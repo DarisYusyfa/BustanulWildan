@@ -3,26 +3,30 @@
     <HeroSection />
     <section class="py-10 bg-gray-100 dark:bg-gray-700"><OrderFlow /></section>
 
-    <!-- Layanan Kami Section -->
     <section class="py-10 bg-gray-100 dark:bg-gray-700">
-      <h3 class="text-3xl font-bold text-center mb-8 text-gray-800 dark:bg-gray-700 dark:text-gray-200">Program Unggulan</h3>
+      <h1 class="text-3xl font-bold text-center mb-8 text-gray-800 dark:bg-gray-700 dark:text-gray-200">Program Unggulan</h1>
       <ServiceCard />
     </section>
 
-    <!-- Apa Kata Mereka Section -->
     <section class="py-10 bg-gray-100 dark:bg-gray-700">
-      <h3 class="text-3xl font-bold text-center mb-8 text-gray-800 dark:bg-gray-700 dark:text-gray-200">Apa Kata Mereka</h3>
+      <h1 class="text-3xl font-bold text-center mb-8 text-gray-800 dark:bg-gray-700 dark:text-gray-200">Apa Kata Mereka</h1>
       <TestimonialSlide />
     </section>
 
-    <PriceList />
+    <section class="py-10 bg-gray-100 dark:bg-gray-700">
+      <h1 class="text-3xl font-bold text-center mb-8 text-gray-800 dark:bg-gray-700 dark:text-gray-200">Artikel Terbaru</h1>
+      <PriceList />
+    </section>
 
-    <FormOrder />
+    <section class="py-10 bg-gray-100 dark:bg-gray-700">
+      <h1 class="text-3xl font-bold text-center mb-8 text-gray-800 dark:bg-gray-700 dark:text-gray-200">Form Pendaftaran</h1>
+      <FormOrder />
+    </section>
 
-    <div class="flex justify-center items-center mt-8 px-3">
-      <font-awesome-icon icon="volume-up" class="text-2xl mr-2 dark:text-white text-darkblue"></font-awesome-icon>
+    <div class="flex justify-center items-center mt-2 mb-2 px-3">
+      <font-awesome-icon icon="volume-up" class="text-xl mr-2 dark:text-white text-darkblue"></font-awesome-icon>
       <div class="marquee">
-        <p class="text-xl text-center text-white dark:text-gray-200">Bagi Yang Ingin Bergabung Dengan Kami Sebagai Worker Silahkan Isi Form dan Deskripsi</p>
+        <p class="text-lg text-center text-white dark:text-gray-200">Ponpes Bustanul Wildan Membuka Pendafataran Bagi Santri/Santriawati Baru</p>
       </div>
     </div>
   </div>
@@ -39,19 +43,19 @@ import FormOrder from '../components/FormOrder.vue';
 
 <style scoped>
 .text-darkblue {
-  color: black; 
+  color: black;
 }
 
 .marquee {
   overflow: hidden;
   white-space: nowrap;
-  width: 100%; 
-  margin: 0 20px; 
+  width: 100%;
+  margin: 0 20px;
 }
 
 .marquee p {
   display: inline-block;
-  animation: marquee 12s linear infinite; 
+  animation: marquee 12s linear infinite;
 }
 
 @keyframes marquee {
@@ -64,7 +68,7 @@ import FormOrder from '../components/FormOrder.vue';
 }
 
 .testimonial-section {
-  padding-top: 50px; 
-  padding-bottom: 50px; 
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 </style>

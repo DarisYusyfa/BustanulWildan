@@ -1,13 +1,22 @@
 <template>
-  <section id="form-order" class="bg-gray-100 py-16 text-gray-800 dark:bg-gray-700 dark:text-gray-200 px-4">
+  <section id="form-registrasi" class="bg-gray-100 py-16 text-gray-800 dark:bg-gray-700 dark:text-gray-200 px-4">
     <div class="container mx-auto text-center">
-      <h3 class="text-3xl font-semibold mb-8">Form Pemesanan</h3>
-      <p class="mb-12 text-lg">Isi formulir di bawah ini untuk memesan layanan kami. Kami akan segera menghubungi Anda!</p>
+      <p class="mb-12 text-lg">Isi formulir di bawah ini untuk mendaftar ke pesantren kami. Kami akan segera menghubungi Anda!</p>
 
       <form class="max-w-xl mx-auto bg-white shadow-md rounded-lg p-8 dark:bg-gray-800" @submit="handleFormSubmit">
         <div class="mb-4">
-          <label for="name" class="block text-left text-lg mb-2">Nama Lengkap</label>
-          <input type="text" id="name" name="name" required class="w-full p-2 border rounded dark:bg-gray-700 dark:text-gray-200" placeholder="Masukkan nama lengkap" />
+          <label for="fullName" class="block text-left text-lg mb-2">Nama Lengkap</label>
+          <input type="text" id="fullName" name="fullName" required class="w-full p-2 border rounded dark:bg-gray-700 dark:text-gray-200" placeholder="Masukkan nama lengkap" />
+        </div>
+
+        <div class="mb-4">
+          <label for="birthDate" class="block text-left text-lg mb-2">Tanggal Lahir</label>
+          <input type="date" id="birthDate" name="birthDate" required class="w-full p-2 border rounded dark:bg-gray-700 dark:text-gray-200" />
+        </div>
+
+        <div class="mb-4">
+          <label for="address" class="block text-left text-lg mb-2">Alamat</label>
+          <input type="text" id="address" name="address" required class="w-full p-2 border rounded dark:bg-gray-700 dark:text-gray-200" placeholder="Masukkan alamat lengkap" />
         </div>
 
         <div class="mb-4">
@@ -23,11 +32,46 @@
         </div>
 
         <div class="mb-4">
-          <label for="message" class="block text-left text-lg mb-2">Pesan / Keterangan</label>
-          <textarea id="message" name="message" rows="4" class="w-full p-2 border rounded dark:bg-gray-700 dark:text-gray-200" placeholder="Masukkan pesan atau keterangan"></textarea>
+          <label for="jenisPeserta" class="block text-left text-lg mb-2">Jenis Peserta</label>
+          <select id="jenisPeserta" name="jenisPeserta" required class="w-full p-2 border rounded dark:bg-gray-700 dark:text-gray-200">
+            <option value="Salafy">Salafy</option>
+            <option value="Kuliah">Kuliah</option>
+            <option value="SMA">SMA</option>
+            <option value="SMP">SMP</option>
+          </select>
         </div>
 
-        <button type="submit" class="bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-500 transition duration-300 w-full">Kirim Pesan</button>
+        <div class="mb-4">
+          <label for="previousEducation" class="block text-left text-lg mb-2">Riwayat Pendidikan</label>
+          <textarea id="previousEducation" name="previousEducation" rows="4" class="w-full p-2 border rounded dark:bg-gray-700 dark:text-gray-200" placeholder="Masukkan riwayat pendidikan sebelumnya"></textarea>
+        </div>
+
+        <div class="mb-4">
+          <label for="parentNameMother" class="block text-left text-lg mb-2">Nama Ibu</label>
+          <input type="text" id="parentNameMother" name="parentNameMother" required class="w-full p-2 border rounded dark:bg-gray-700 dark:text-gray-200" placeholder="Masukkan nama ibu" />
+        </div>
+
+        <div class="mb-4">
+          <label for="parentPhoneMother" class="block text-left text-lg mb-2">Nomor Telepon Ibu</label>
+          <input type="tel" id="parentPhoneMother" name="parentPhoneMother" required class="w-full p-2 border rounded dark:bg-gray-700 dark:text-gray-200" placeholder="Masukkan nomor telepon ibu" />
+        </div>
+
+        <div class="mb-4">
+          <label for="parentNameFather" class="block text-left text-lg mb-2">Nama Bapak</label>
+          <input type="text" id="parentNameFather" name="parentNameFather" required class="w-full p-2 border rounded dark:bg-gray-700 dark:text-gray-200" placeholder="Masukkan nama bapak" />
+        </div>
+
+        <div class="mb-4">
+          <label for="parentPhoneFather" class="block text-left text-lg mb-2">Nomor Telepon Bapak</label>
+          <input type="tel" id="parentPhoneFather" name="parentPhoneFather" required class="w-full p-2 border rounded dark:bg-gray-700 dark:text-gray-200" placeholder="Masukkan nomor telepon bapak" />
+        </div>
+
+        <div class="mb-4">
+          <label for="entryDate" class="block text-left text-lg mb-2">Tanggal Masuk Pesantren</label>
+          <input type="date" id="entryDate" name="entryDate" required class="w-full p-2 border rounded dark:bg-gray-700 dark:text-gray-200" />
+        </div>
+
+        <button type="submit" class="bg-green-600 text-white py-2 px-6 rounded hover:bg-green-500 transition duration-300 w-full">Daftar Sekarang</button>
       </form>
     </div>
   </section>
@@ -81,8 +125,8 @@ const handleFormSubmit = (e) => {
 
       // Menampilkan SweetAlert
       Swal.fire({
-        title: 'Pesanan Berhasil Dikirim!',
-        text: 'Kami akan segera menghubungi Anda.',
+        title: 'Pendaftaran Berhasil Dikirim!',
+        text: 'Kami akan segera menghubungi Anda untuk proses lebih lanjut.',
         icon: 'success',
         confirmButtonText: 'Oke',
       });
@@ -94,7 +138,7 @@ const handleFormSubmit = (e) => {
 
       // Menampilkan SweetAlert dengan pesan error
       Swal.fire({
-        title: 'Gagal Mengirim Pesanan',
+        title: 'Gagal Mengirim Pendaftaran',
         text: 'Coba lagi nanti.',
         icon: 'error',
         confirmButtonText: 'Oke',

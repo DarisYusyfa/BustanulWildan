@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16 bg-gray-100 dark:bg-gray-800 overflow-hidden">
+  <section class="py-16 bg-gray-100 py-16 text-gray-800 dark:bg-gray-700 dark:text-gray-200 overflow-hidden">
     <div class="container mx-auto px-4">
       <div class="relative h-[400px] overflow-hidden">
         <div ref="scrollContainer" class="absolute top-0 left-0 right-0">
@@ -35,69 +35,69 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from 'vue';
 
 const testimoniList = [
   {
-    name: "Ahmad Fauzi",
-    occupation: "Dosen Universitas Indonesia",
-    quote: "Pendidikan di pesantren ini telah membentuk karakter dan intelektual saya, mempersiapkan saya untuk menghadapi tantangan di dunia akademis.",
-    avatar: "/placeholder.svg?height=200&width=200"
+    name: 'Ahmad Fauzi',
+    occupation: 'Dosen Universitas Indonesia',
+    quote: 'Pendidikan di pesantren ini telah membentuk karakter dan intelektual saya, mempersiapkan saya untuk menghadapi tantangan di dunia akademis.',
+    avatar: '/placeholder.svg?height=200&width=200',
   },
   {
-    name: "Siti Aminah",
-    occupation: "Pengusaha Sukses",
-    quote: "Nilai-nilai kepemimpinan dan kewirausahaan yang saya pelajari di pesantren menjadi fondasi kesuksesan bisnis saya hari ini.",
-    avatar: "/placeholder.svg?height=200&width=200"
+    name: 'Siti Aminah',
+    occupation: 'Pengusaha Sukses',
+    quote: 'Nilai-nilai kepemimpinan dan kewirausahaan yang saya pelajari di pesantren menjadi fondasi kesuksesan bisnis saya hari ini.',
+    avatar: '/placeholder.svg?height=200&width=200',
   },
   {
-    name: "Muhammad Rizki",
+    name: 'Muhammad Rizki',
     occupation: "Hafiz Qur'an & Motivator",
     quote: "Program tahfidz di pesantren ini luar biasa. Saya bisa menghafal Al-Qur'an sambil tetap mendapatkan pendidikan umum yang berkualitas.",
-    avatar: "/placeholder.svg?height=200&width=200"
+    avatar: '/placeholder.svg?height=200&width=200',
   },
   {
-    name: "Aisyah Putri",
-    occupation: "Dokter",
-    quote: "Pesantren ini tidak hanya mengajarkan ilmu agama, tapi juga mendorong santri untuk berprestasi dalam bidang sains dan teknologi.",
-    avatar: "/placeholder.svg?height=200&width=200"
+    name: 'Aisyah Putri',
+    occupation: 'Dokter',
+    quote: 'Pesantren ini tidak hanya mengajarkan ilmu agama, tapi juga mendorong santri untuk berprestasi dalam bidang sains dan teknologi.',
+    avatar: '/placeholder.svg?height=200&width=200',
   },
   {
-    name: "Umar Hidayat",
-    occupation: "Diplomat",
-    quote: "Kemampuan bahasa Arab dan Inggris yang saya peroleh di pesantren sangat membantu karir saya di dunia internasional.",
-    avatar: "/placeholder.svg?height=200&width=200"
+    name: 'Umar Hidayat',
+    occupation: 'Diplomat',
+    quote: 'Kemampuan bahasa Arab dan Inggris yang saya peroleh di pesantren sangat membantu karir saya di dunia internasional.',
+    avatar: '/placeholder.svg?height=200&width=200',
   },
   {
-    name: "Fatimah Azzahra",
-    occupation: "Aktivis Sosial",
-    quote: "Pesantren ini mengajarkan saya pentingnya berkontribusi pada masyarakat. Ini menjadi motivasi saya dalam pekerjaan sosial.",
-    avatar: "/placeholder.svg?height=200&width=200"
-  }
-]
+    name: 'Fatimah Azzahra',
+    occupation: 'Aktivis Sosial',
+    quote: 'Pesantren ini mengajarkan saya pentingnya berkontribusi pada masyarakat. Ini menjadi motivasi saya dalam pekerjaan sosial.',
+    avatar: '/placeholder.svg?height=200&width=200',
+  },
+];
 
-const scrollContainer = ref(null)
+const scrollContainer = ref(null);
 
 const startScrolling = () => {
-  const container = scrollContainer.value
-  let scrollAmount = 0
+  const container = scrollContainer.value;
+  let scrollAmount = 0;
 
-  const scrollSpeed = 0.5 // Kecepatan scroll
+  const scrollSpeed = 0.5; // Kecepatan scroll
   const scrollStep = () => {
-    scrollAmount += scrollSpeed
+    scrollAmount += scrollSpeed;
     if (scrollAmount >= container.scrollHeight / 2) {
-      scrollAmount = 0 // Reset posisi scroll
+      scrollAmount = 0; // Reset posisi scroll
     }
-    container.style.transform = `translateY(-${scrollAmount}px)`
-    requestAnimationFrame(scrollStep)
-  }
+    container.style.transform = `translateY(-${scrollAmount}px)`;
+    requestAnimationFrame(scrollStep);
+  };
 
-  scrollStep()
-}
+  scrollStep();
+};
 
 onMounted(() => {
-  startScrolling()
-})
+  startScrolling();
+});
 </script>
 
 <style scoped>
