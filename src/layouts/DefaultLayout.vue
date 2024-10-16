@@ -1,6 +1,5 @@
 <template>
-  <div class="Poopins min-h-screen bg-gray-700 dark:bg-gray-900">
-    <!-- Tambahkan kelas font-sans -->
+  <div class="min-h-screen bg-gray-700 dark:bg-gray-900">
     <Navbar />
     <router-view />
     <Footer />
@@ -12,8 +11,12 @@ import Navbar from '../components/Navbar.vue';
 import Footer from '../components/Footer.vue';
 </script>
 
-<style scoped>
+<style>
+/* CSS global */
 body {
   font-family: 'Poopins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Mencegah overflow horizontal */
 }
 </style>
