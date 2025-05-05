@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100 py-16 text-gray-800 dark:bg-gray-700 dark:text-gray-200 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200 py-12 px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
       <div class="mb-8">
         <input

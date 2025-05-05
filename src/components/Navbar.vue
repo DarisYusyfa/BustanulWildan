@@ -36,7 +36,7 @@
             <ul v-if="isDropdownOpen" class="absolute left-0 mt-2 bg-white dark:bg-gray-800 shadow-lg rounded-md w-40">
               <li><router-link to="/ppdb" class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600">PPDB</router-link></li>
               <li><router-link to="/pengajian" class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600">Pengajian</router-link></li>
-              <li><router-link to="/events" class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600">Acara Lainnya</router-link></li>
+              <li><router-link to="/acaralain" class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600">Acara Lainnya</router-link></li>
             </ul>
           </transition>
         </li>
@@ -83,7 +83,7 @@
               <ul v-if="isDropdownMobileOpen" class="bg-gray-700 rounded-md mt-1">
                 <li><router-link to="/ppdb" @click="toggleMenu" class="block px-4 py-2 hover:bg-gray-600">PPDB</router-link></li>
                 <li><router-link to="/pengajian" @click="toggleMenu" class="block px-4 py-2 hover:bg-gray-600">Pengajian</router-link></li>
-                <li><router-link to="/events" @click="toggleMenu" class="block px-4 py-2 hover:bg-gray-600">Acara Lainnya</router-link></li>
+                <li><router-link to="/acaralain" @click="toggleMenu" class="block px-4 py-2 hover:bg-gray-600">Acara Lainnya</router-link></li>
               </ul>
             </transition>
           </li>

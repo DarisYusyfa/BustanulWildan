@@ -1,31 +1,33 @@
 <template>
-  <section class="py-16 bg-gray-100 py-16 text-gray-800 dark:bg-gray-700 dark:text-gray-200 overflow-hidden">
-    <div class="container mx-auto px-4">
-      <div class="relative h-[400px] overflow-hidden">
+  <section class="py-16 bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200 overflow-hidden">
+    <div class="mx-auto px-4 max-w-6xl">
+      <div class="relative h-[380px] overflow-hidden">
         <div ref="scrollContainer" class="absolute top-0 left-0 right-0">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-            <div v-for="(testimoni, index) in testimoniList" :key="`original-${index}`" class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl">
-              <div class="flex items-center mb-4">
-                <img :src="testimoni.avatar" :alt="testimoni.name" class="w-16 h-16 rounded-full object-cover mr-4" />
+          <!-- Baris pertama -->
+          <div class="flex flex-wrap justify-center gap-6 mb-6">
+            <div v-for="(testimoni, index) in testimoniList" :key="`original-${index}`" class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-4 w-[260px] text-sm transition-all duration-300 hover:shadow-lg">
+              <div class="flex items-center mb-3">
+                <img :src="testimoni.avatar" :alt="testimoni.name" class="w-12 h-12 rounded-full object-cover mr-3" />
                 <div>
-                  <h3 class="text-lg font-semibold text-gray-800 dark:text-white">{{ testimoni.name }}</h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-300">{{ testimoni.occupation }}</p>
+                  <h3 class="text-base font-semibold text-gray-800 dark:text-white">{{ testimoni.name }}</h3>
+                  <p class="text-xs text-gray-600 dark:text-gray-300">{{ testimoni.occupation }}</p>
                 </div>
               </div>
-              <p class="text-gray-700 dark:text-gray-200 italic">"{{ testimoni.quote }}"</p>
+              <p class="text-gray-700 dark:text-gray-200 italic leading-snug">"{{ testimoni.quote }}"</p>
             </div>
           </div>
-          <!-- Duplikasi untuk animasi tanpa henti -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div v-for="(testimoni, index) in testimoniList" :key="`duplicate-${index}`" class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl">
-              <div class="flex items-center mb-4">
-                <img :src="testimoni.avatar" :alt="testimoni.name" class="w-16 h-16 rounded-full object-cover mr-4" />
+
+          <!-- Duplikasi untuk animasi loop -->
+          <div class="flex flex-wrap justify-center gap-6">
+            <div v-for="(testimoni, index) in testimoniList" :key="`duplicate-${index}`" class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-4 w-[260px] text-sm transition-all duration-300 hover:shadow-lg">
+              <div class="flex items-center mb-3">
+                <img :src="testimoni.avatar" :alt="testimoni.name" class="w-12 h-12 rounded-full object-cover mr-3" />
                 <div>
-                  <h3 class="text-lg font-semibold text-gray-800 dark:text-white">{{ testimoni.name }}</h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-300">{{ testimoni.occupation }}</p>
+                  <h3 class="text-base font-semibold text-gray-800 dark:text-white">{{ testimoni.name }}</h3>
+                  <p class="text-xs text-gray-600 dark:text-gray-300">{{ testimoni.occupation }}</p>
                 </div>
               </div>
-              <p class="text-gray-700 dark:text-gray-200 italic">"{{ testimoni.quote }}"</p>
+              <p class="text-gray-700 dark:text-gray-200 italic leading-snug">"{{ testimoni.quote }}"</p>
             </div>
           </div>
         </div>
@@ -81,12 +83,12 @@ const scrollContainer = ref(null);
 const startScrolling = () => {
   const container = scrollContainer.value;
   let scrollAmount = 0;
+  const scrollSpeed = 0.5;
 
-  const scrollSpeed = 0.5; // Kecepatan scroll
   const scrollStep = () => {
     scrollAmount += scrollSpeed;
     if (scrollAmount >= container.scrollHeight / 2) {
-      scrollAmount = 0; // Reset posisi scroll
+      scrollAmount = 0;
     }
     container.style.transform = `translateY(-${scrollAmount}px)`;
     requestAnimationFrame(scrollStep);
@@ -101,47 +103,5 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.bg-white {
-  background-color: #ffffff;
-}
-
-.bg-gray-100 {
-  background-color: #f3f4f6;
-}
-
-.bg-gray-700 {
-  background-color: #374151;
-}
-
-.dark .bg-gray-700 {
-  background-color: #1f2937;
-}
-
-.dark .bg-white {
-  background-color: #1f2937;
-}
-
-.text-gray-800 {
-  color: #1f2937;
-}
-
-.text-gray-600 {
-  color: #4b5563;
-}
-
-.dark .text-gray-800 {
-  color: #d1d5db;
-}
-
-.dark .text-gray-600 {
-  color: #9ca3af;
-}
-
-.text-gray-700 {
-  color: #374151;
-}
-
-.dark .text-gray-200 {
-  color: #e5e7eb;
-}
+/* Warna dan gaya tambahan tetap sama */
 </style>
